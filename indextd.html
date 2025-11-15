@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IOCL Operations Tool Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* IOCL-themed Color Palette */
+        :root {
+            --iocl-red: #D02027;        /* Primary Red */
+            --iocl-dark-red: #B0181D;   /* Darker Red for Hover */
+            --iocl-blue: #004b90;       /* Corporate Blue */
+            --iocl-bg: #F7F7F7;         /* Light Background */
+            --iocl-text: #333333;       /* Dark Text */
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--iocl-bg);
+            transition: background-color 0.5s;
+        }
+
+        /* Branding Bar at the top (A common IOCL design element) */
+        .header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background-color: var(--iocl-red);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* NEW: Styling for the Welcome Message */
+        .welcome-message {
+            color: var(--iocl-blue);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--iocl-blue);
+            margin-bottom: 40px;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 30px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+        }
+
+        .link-button {
+            padding: 18px 35px; /* Slightly larger padding */
+            min-width: 200px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: var(--iocl-red); /* IOCL Red */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .link-button:hover {
+            background-color: var(--iocl-dark-red); /* Darker Red on hover */
+            transform: translateY(-4px); /* More pronounced lift effect */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .button-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .link-button {
+                min-width: 250px;
+            }
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 0 10px;
+            }
+            .welcome-message {
+                font-size: 0.9rem;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-bar"></div>
+    
+    <div class="welcome-message">
+        Welcome to **Indian Oil Pipelines Division**, Eastern Region Pipelines, Muzaffarpur
+    </div>
+
+    <h1>Select Your Required Operations Tool</h1>
+
+    <div class="button-container">
+        <a href="https://script.google.com/macros/s/AKfycbxl5nOokH8azHf4qY_Bm66LKkA_F9bMjzT8d-kuUPb1xZ6OxJeWK8hyk1YoCdbX4j5sIg/exec" target="_blank" class="link-button">
+            📊 Analysis (IOCL)
+        </a>
+
+        <a href="https://script.google.com/macros/s/AKfycbxi8Q1I376JsCG9SeLTzlCdts8qn8994kB1uuJq5_VFUd2w0M8pTFsqTqr26JfbPt_x/exec" target="_blank" class="link-button">
+            📘 Technicians Log Book
+        </a>
+    </div>
+
+</body>
+</html>
